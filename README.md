@@ -11,7 +11,7 @@ The script send a packets for port knocking liberation access.<br>
 Before execute program utilize netcat or other program for access a final port.
 
 Example a portknocking:<br>
-![image](https://github.com/user-attachments/assets/b32d734e-a6ae-43a8-a5c8-7e52602f083b)
+![image](https://github.com/user-attachments/assets/37297056-4838-4102-86a4-0b857132de75)
 
 <br>The function -s (--single) realize a knock for a single ip<br>
 
