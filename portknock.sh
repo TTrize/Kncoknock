@@ -1,19 +1,23 @@
 #!/bin/bash
 
+//set variable
 OPTION="${1}"
 IP="${2}"
 PORTS="${3}"
 
+/set color
 GREEN='\033[0;32m'
 NC='\033[0m'
+
 
 VERSION='1.0'
 
 
-
+//function clear temporary files
 _Clear_(){
         rm -rf /tmp/knock &>/dev/null
 }
+
 
 _Banner_(){
         echo -e "
@@ -58,6 +62,7 @@ _Help_(){
         "
 }
 
+//verified program nc instaled and argument verified input
 _Verified_(){
         if ! [[ -e /usr/bin/nc ]]; then
                 echo -e "\nThe NC program not found.\n"
@@ -69,6 +74,8 @@ _Verified_(){
         fi
 }
 
+
+/ping sweep for valid ips knock request
 _Sweep_(){
 
         mkdir /tmp/knock && cd /tmp/knock
@@ -81,6 +88,8 @@ _Sweep_(){
 
 }
 
+
+//function port knock witch a single ip destination
 _Knock_(){
 
         echo -e "
@@ -102,6 +111,7 @@ _Knock_(){
         fi
 }
 
+//ping scan function: enter example ip: 192.160.1 and run ping scan for valid ips before noticing a port knocking in the target ip range
 _KnockSweep_(){
 
         _Sweep_
