@@ -10,9 +10,9 @@ knocking a range ip
 The script send a packets for port knocking liberation access.<br>
 Before execute program utilize netcat or other program for access a final port.
 
-Example a portknocking:
+Example a portknocking:<br>
 ![image](https://github.com/user-attachments/assets/b32d734e-a6ae-43a8-a5c8-7e52602f083b)
 
-the function -s (--single) realize a knock for a single ip
+<br>The function -s (--single) realize a knock for a single ip<br>
 
 *./portknock.sh -s 192.168.1.10 "13 37 30000 3000"
